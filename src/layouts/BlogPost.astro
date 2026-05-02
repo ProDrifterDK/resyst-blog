@@ -260,7 +260,7 @@ const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.prop
 					{tags && tags.length > 0 && (
 						<div class="article-tags">
 							{tags.map((tag: string) => (
-								<span class="tag-pill">{tag}</span>
+								<a href={`/blog/tags/${encodeURIComponent(tag)}/`} class="tag-pill">{tag}</a>
 							))}
 						</div>
 					)}

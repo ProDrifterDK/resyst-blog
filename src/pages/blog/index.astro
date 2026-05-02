@@ -195,8 +195,8 @@ const posts = (await getCollection('blog')).sort(
 									)}
 									{post.data.tags && post.data.tags.length > 0 && (
 										<div class="post-card-tags">
-											{post.data.tags.slice(0, 3).map((tag: string) => (
-												<span class="post-card-tag">{tag}</span>
+											{post.data.tags.slice(0, 4).map((tag: string) => (
+												<a href={`/blog/tags/${encodeURIComponent(tag)}/`} class="post-card-tag">{tag}</a>
 											))}
 										</div>
 									)}

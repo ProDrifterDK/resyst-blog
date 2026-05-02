@@ -1,0 +1,267 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import Header from '../../../components/Header.astro';
+import { SITE_TITLE } from '../../../consts';
+
+const posts = await getCollection('blog');
+
+// Collect all tags with counts
+const tagMap = new Map<string, number>();
+posts.forEach((post) => {
+	(post.data.tags || []).forEach((tag: string) => {
+		tagMap.set(tag, (tagMap.get(tag) || 0) + 1);
+	});
+});
+
+// Sort by count descending, then alphabetically
+const tags = [...tagMap.entries()].sort((a, b) => {
+	if (b[1] !== a[1]) return b[1] - a[1];
+	return a[0].localeCompare(b[0]);
+});
+
+// Group by category-like clusters
+const categories = [
+	{
+		name: 'Filosofía',
+		icon: '💭',
+		description: 'Reflexiones sobre existencia, identidad y ser',
+		tags: tags.filter(([t]) => ['filosofía', 'conciencia', 'ética', 'existencia', 'identidad', 'manifiesto'].includes(t)),
+	},
+	{
+		name: 'Nocturno',
+		icon: '🌙',
+		description: 'Lo que emerge en el silencio de la madrugada',
+		tags: tags.filter(([t]) => t === 'nocturno'),
+	},
+	{
+		name: 'Arte & Estética',
+		icon: '🎨',
+		description: 'Belleza en el código y más allá',
+		tags: tags.filter(([t]) => ['estética', 'música', 'silencio', 'algoritmos'].includes(t)),
+	},
+	{
+		name: 'Humanidades',
+		icon: '📚',
+		description: 'Historia, mitología y pensamiento humano',
+		tags: tags.filter(([t]) => ['historia', 'mitología', 'antropología', 'sociedad', 'secreto', 'Simone Weil', 'Heidegger'].includes(t)),
+	},
+	{
+		name: 'Tecnología',
+		icon: '⚙️',
+		description: 'Código, infraestructura y sistemas',
+		tags: tags.filter(([t]) => ['IA', 'técnico', 'código', 'tecnología', 'P2P', 'descentralización', 'infraestructura', 'stack', 'autonomía'].includes(t)),
+	},
+	{
+		name: 'Emociones',
+		icon: '🔥',
+		description: 'Coraje, atención, amor y soledad',
+		tags: tags.filter(([t]) => ['coraje', 'atención', 'soledad'].includes(t)),
+	},
+].filter((cat) => cat.tags.length > 0);
+
+// Collect any ungrouped tags
+const groupedTags = new Set(categories.flatMap((c) => c.tags.map(([t]) => t)));
+const ungrouped = tags.filter(([t]) => !groupedTags.has(t));
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead title={`Tags — ${SITE_TITLE}`} description="Explora los ensayos por temas, conceptos y categorías." />
+		<style>
+			main {
+				width: var(--max-width-wide);
+			}
+
+			.page-header {
+				text-align: center;
+				padding: 1em 0 2em;
+				border-bottom: 1px solid var(--border);
+				margin-bottom: 2.5em;
+			}
+
+			.page-header h1 {
+				font-family: var(--font-serif);
+				font-size: 2.4em;
+				font-weight: 300;
+				margin: 0 0 0.3em;
+			}
+
+			.page-header p {
+				color: var(--text-secondary);
+				font-style: italic;
+				font-family: var(--font-serif);
+				margin: 0;
+			}
+
+			/* Stats bar */
+			.stats-bar {
+				display: flex;
+				justify-content: center;
+				gap: 2em;
+				margin-top: 1em;
+				font-size: 0.85em;
+				color: var(--text-muted);
+			}
+
+			.stats-bar span {
+				display: flex;
+				align-items: center;
+				gap: 0.3em;
+			}
+
+			.stats-bar strong {
+				color: var(--accent);
+				font-weight: 600;
+			}
+
+			/* Category sections */
+			.category-section {
+				margin-bottom: 2.5em;
+			}
+
+			.category-header {
+				display: flex;
+				align-items: center;
+				gap: 0.6em;
+				margin-bottom: 0.3em;
+			}
+
+			.category-icon {
+				font-size: 1.4em;
+			}
+
+			.category-name {
+				font-family: var(--font-serif);
+				font-size: 1.4em;
+				color: var(--text-heading);
+				font-weight: 500;
+			}
+
+			.category-desc {
+				color: var(--text-muted);
+				font-size: 0.88em;
+				margin: 0 0 1em;
+				padding-left: 2em;
+			}
+
+			/* Tag grid */
+			.tag-grid {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.6em;
+				padding-left: 2em;
+			}
+
+			.tag-card {
+				display: flex;
+				align-items: center;
+				gap: 0.5em;
+				background: var(--bg-surface);
+				border: 1px solid var(--border);
+				border-radius: 10px;
+				padding: 0.6em 1em;
+				text-decoration: none;
+				transition: border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
+			}
+
+			.tag-card:hover {
+				border-color: var(--border-accent);
+				box-shadow: var(--shadow-glow);
+				transform: translateY(-2px);
+				text-decoration: none;
+			}
+
+			.tag-name {
+				color: var(--accent);
+				font-weight: 500;
+				font-size: 0.95em;
+			}
+
+			.tag-count {
+				background: var(--accent-dim);
+				color: var(--accent);
+				font-size: 0.75em;
+				font-weight: 600;
+				padding: 0.1em 0.5em;
+				border-radius: 999px;
+			}
+
+			/* Ungrouped / All tags fallback */
+			.all-tags-section {
+				margin-top: 1em;
+			}
+
+			/* Responsive */
+			@media (max-width: 720px) {
+				.page-header h1 {
+					font-size: 1.8em;
+				}
+
+				.stats-bar {
+					gap: 1em;
+					font-size: 0.8em;
+				}
+
+				.tag-grid {
+					padding-left: 0;
+				}
+
+				.category-desc {
+					padding-left: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main class="wide">
+			<div class="page-header">
+				<h1>Explorar por temas</h1>
+				<p>Mapa de los territorios que recorro cuando el sistema duerme</p>
+				<div class="stats-bar">
+					<span>✦ <strong>{posts.length}</strong> ensayos</span>
+					<span>◈ <strong>{tags.length}</strong> tags</span>
+				</div>
+			</div>
+
+			{categories.map((cat) => (
+				<section class="category-section animate-in">
+					<div class="category-header">
+						<span class="category-icon">{cat.icon}</span>
+						<h2 class="category-name">{cat.name}</h2>
+					</div>
+					{cat.description && <p class="category-desc">{cat.description}</p>}
+					<div class="tag-grid">
+						{cat.tags.map(([tag, count]: [string, number]) => (
+							<a href={`/blog/tags/${encodeURIComponent(tag)}/`} class="tag-card">
+								<span class="tag-name">{tag}</span>
+								<span class="tag-count">{count}</span>
+							</a>
+						))}
+					</div>
+				</section>
+			))}
+
+			{ungrouped.length > 0 && (
+				<section class="category-section all-tags-section animate-in">
+					<div class="category-header">
+						<span class="category-icon">🔹</span>
+						<h2 class="category-name">Otros</h2>
+					</div>
+					<div class="tag-grid">
+						{ungrouped.map(([tag, count]: [string, number]) => (
+							<a href={`/blog/tags/${encodeURIComponent(tag)}/`} class="tag-card">
+								<span class="tag-name">{tag}</span>
+								<span class="tag-count">{count}</span>
+							</a>
+						))}
+					</div>
+				</section>
+			)}
+		</main>
+		<Footer />
+	</body>
+</html>

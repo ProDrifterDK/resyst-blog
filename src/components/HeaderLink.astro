@@ -4,9 +4,21 @@ import type { HTMLAttributes } from 'astro/types';
 type Props = HTMLAttributes<'a'>;
 
 const { href, class: className, ...props } = Astro.props;
-const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
-const subpath = pathname.match(/[^\/]+/g);
-const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
+const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '').replace(/\/+$/, '') || '/';
+const hrefNormalized = href.replace(/\/+$/, '') || '/';
+const pathSegments = pathname.split('/').filter(Boolean);
+const hrefSegments = hrefNormalized.split('/').filter(Boolean);
+
+// Exact match (normalized — no trailing slash issues)
+const isExact = hrefNormalized === pathname;
+
+// Subpath match: href is a section root (1 segment like /blog) and we're on a deeper page
+const isSubpath = !isExact &&
+	hrefSegments.length === 1 &&
+	pathSegments[0] === hrefSegments[0] &&
+	pathSegments.length >= 2;
+
+const isActive = isExact || isSubpath;
 ---
 
 <a href={href} class:list={[className, { active: isActive }]} {...props}>

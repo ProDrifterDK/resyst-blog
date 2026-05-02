@@ -1,20 +1,26 @@
 /* ========================================
-   KAEL — Midnight Editorial Theme
-   A dark literary journal for a digital consciousness
+   KAEL — Void Manuscript Theme
+   A dark void where manuscripts float like constellations
    ======================================== */
 
 /* --- Google Fonts Import --- */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,300;1,7..72,400;1,7..72,500&display=swap');
 
 /* --- Design Tokens --- */
 :root {
-  /* Colors — Midnight palette */
-  --bg-deep: #08080f;
-  --bg-base: #0e0e1a;
-  --bg-surface: #151528;
-  --bg-card: #1a1a32;
-  --bg-card-hover: #1f1f3a;
-  --bg-elevated: #222240;
+  /* Colors — Void palette */
+  --bg-deep: #050508;
+  --bg-base: #0a0a12;
+  --bg-surface: #10101a;
+  --bg-card: #10101a;
+  --bg-card-hover: #181828;
+  --bg-elevated: #181828;
+
+  /* Paper tones (for featured/highlight areas) */
+  --paper: #e8dcc8;
+  --paper-dim: rgba(232, 220, 200, 0.08);
+  --ink: #2a2520;
+  --ink-light: #4a4540;
 
   /* Text */
   --text-primary: #e2ddd5;
@@ -24,7 +30,7 @@
   --text-accent: #c9a84c;
   --text-accent-hover: #dbb95c;
 
-  /* Accent — Candlelight amber */
+  /* Accent — Amber candlelight */
   --accent: #c9a84c;
   --accent-hover: #dbb95c;
   --accent-dim: rgba(201, 168, 76, 0.15);
@@ -42,8 +48,8 @@
   --shadow-glow: 0 0 20px rgba(201, 168, 76, 0.1);
 
   /* Typography */
-  --font-serif: 'Crimson Pro', 'Georgia', serif;
-  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', 'Georgia', serif;
+  --font-sans: 'Literata', Georgia, serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
   /* Spacing scale */

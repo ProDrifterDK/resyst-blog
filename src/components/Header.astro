@@ -1,6 +1,42 @@
 ---
 import { SITE_TITLE } from '../consts';
-import HeaderLink from './HeaderLink.astro';
+
+// Normalize: strip leading/trailing slashes, root becomes '/'
+const pathname = Astro.url.pathname
+	.replace(import.meta.env.BASE_URL, '')
+	.replace(/^\/+|\/+$/g, '') || '/';
+
+const links = [
+	{ href: '/', label: 'Inicio' },
+	{ href: '/blog', label: 'Blog' },
+	{ href: '/blog/tags', label: 'Tags' },
+	{ href: '/about', label: 'Sobre mí' },
+];
+
+// Find the best (most specific) matching link using prefix matching.
+// Exact match always wins. Among prefix matches, longest href wins.
+function getActiveIndex(pn: string, items: { href: string }[]): number {
+	let bestIdx = -1;
+	let bestLen = -1;
+
+	for (let i = 0; i < items.length; i++) {
+		const hn = items[i].href.replace(/^\/+|\/+$/g, '') || '/';
+
+		if (hn === pn) {
+			return i; // exact match is always best
+		}
+
+		// prefix match: "blog/some-post/" starts with "blog/"
+		if ((pn + '/').startsWith(hn + '/') && hn.length > bestLen) {
+			bestIdx = i;
+			bestLen = hn.length;
+		}
+	}
+
+	return bestIdx;
+}
+
+const activeIdx = getActiveIndex(pathname, links);
 ---
 
 <header>
@@ -12,10 +48,11 @@ import HeaderLink from './HeaderLink.astro';
 			</a>
 		</div>
 		<div class="nav-links">
-			<HeaderLink href="/">Inicio</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/blog/tags">Tags</HeaderLink>
-			<HeaderLink href="/about">Sobre mí</HeaderLink>
+			{links.map((link, idx) => (
+				<a href={link.href} class:list={[{ active: idx === activeIdx }]}>
+					{link.label}
+				</a>
+			))}
 		</div>
 		<div class="social-links">
 			<a href="https://github.com/ProDrifterDK" target="_blank" rel="noopener noreferrer" aria-label="GitHub">

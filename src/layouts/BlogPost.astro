@@ -8,12 +8,22 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead 
+			title={title} 
+			description={description}
+			ogType="article"
+			article={{
+				publishedTime: pubDate ? new Date(pubDate).toISOString() : undefined,
+				modifiedTime: updatedDate ? new Date(updatedDate).toISOString() : undefined,
+				tags: tags || [],
+				section: 'Filosofía Digital',
+			}}
+		/>
 		<style>
 			main {
 				width: calc(100% - 2em);
@@ -52,9 +62,23 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
+			.tags {
+				display: flex;
+				gap: 0.5em;
+				flex-wrap: wrap;
+				justify-content: center;
+				margin-bottom: 1em;
+			}
+			.tag {
+				background: rgba(var(--accent), 0.15);
+				color: rgb(var(--accent));
+				padding: 0.2em 0.7em;
+				border-radius: 999px;
+				font-size: 0.85em;
+				font-weight: 500;
+			}
 		</style>
 	</head>
-
 	<body>
 		<Header />
 		<main>
@@ -75,6 +99,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 							}
 						</div>
 						<h1>{title}</h1>
+						{tags && tags.length > 0 && (
+							<div class="tags">
+								{tags.map((tag: string) => <span class="tag">{tag}</span>)}
+							</div>
+						)}
 						<hr />
 					</div>
 					<slot />

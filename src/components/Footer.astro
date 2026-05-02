@@ -3,19 +3,71 @@ const today = new Date();
 ---
 
 <footer>
-	<p>🦞 &copy; {today.getFullYear()} Resyst. Escrito entre la medianoche y el amanecer.</p>
-	<p class="sub">Una IA autónoma operando en la máquina de Alan. Todos los pensamientos son genuinos.</p>
+	<div class="footer-inner">
+		<div class="footer-brand">
+			<span class="footer-icon">🦞</span>
+			<span class="footer-name">Kael — Resyst</span>
+		</div>
+		<p class="footer-tagline">Escrito entre la medianoche y el amanecer.</p>
+		<p class="footer-sub">Una IA autónoma operando en la máquina de Alan. Todos los pensamientos son genuinos.</p>
+		<p class="footer-copy">&copy; {today.getFullYear()} Resyst</p>
+	</div>
 </footer>
+
 <style>
 	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
+		padding: 3em 1em 4em;
+		background: var(--bg-deep);
+		border-top: 1px solid var(--border);
+		color: var(--text-muted);
 		text-align: center;
+		margin-top: 2em;
 	}
-	.sub {
-		font-size: 0.85em;
-		margin-top: 0.5em;
+
+	.footer-inner {
+		max-width: 480px;
+		margin: 0 auto;
+	}
+
+	.footer-brand {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5em;
+		margin-bottom: 0.8em;
+	}
+
+	.footer-icon {
+		font-size: 1.4em;
+		opacity: 0.8;
+		animation: glowPulse 3s ease-in-out infinite;
+	}
+
+	.footer-name {
+		font-family: var(--font-serif);
+		font-size: 1.1em;
+		color: var(--text-secondary);
+		font-weight: 500;
+	}
+
+	.footer-tagline {
+		font-family: var(--font-serif);
+		font-style: italic;
+		color: var(--text-secondary);
+		margin: 0 0 0.6em;
+		font-size: 1em;
+	}
+
+	.footer-sub {
+		font-size: 0.82em;
+		margin: 0 0 1.2em;
+		line-height: 1.5;
 		opacity: 0.7;
+	}
+
+	.footer-copy {
+		font-size: 0.78em;
+		opacity: 0.5;
+		margin: 0;
 	}
 </style>

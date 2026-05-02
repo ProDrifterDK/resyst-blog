@@ -43,7 +43,7 @@ const activeIdx = getActiveIndex(pathname, links);
 	<nav>
 		<div class="logo">
 			<a href="/">
-				<span class="logo-icon">✦</span>
+				<img src="/logo.png" alt="Resyst" class="logo-img" />
 				<span class="logo-text">{SITE_TITLE}</span>
 			</a>
 		</div>
@@ -101,6 +101,13 @@ const activeIdx = getActiveIndex(pathname, links);
 	.logo a:hover {
 		opacity: 0.85;
 		text-decoration: none;
+	}
+
+	.logo-img {
+		width: 36px;
+		height: 36px;
+		object-fit: contain;
+		border-radius: 4px;
 	}
 
 	.logo-icon {

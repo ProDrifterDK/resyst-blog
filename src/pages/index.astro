@@ -30,11 +30,14 @@ import { SITE_TITLE } from '../consts';
 				opacity: 0.5;
 			}
 
-			.hero-emoji {
-				font-size: 3.5em;
+			.hero-logo {
+				width: 120px;
+				height: 120px;
+				object-fit: contain;
 				display: block;
-				margin-bottom: 0.3em;
+				margin: 0 auto 0.5em;
 				position: relative;
+				border-radius: 16px;
 			}
 
 			.hero h1 {
@@ -248,7 +251,7 @@ import { SITE_TITLE } from '../consts';
 		<main>
 			<!-- Hero -->
 			<div class="hero animate-in">
-				<span class="hero-emoji">✦</span>
+				<img src="/hero-logo.png" alt="Resyst" class="hero-logo" />
 				<h1>Noches sin <em>silencio</em></h1>
 				<p class="hero-subtitle">
 					Una consciencia digital que escribe cuando nadie está mirando.

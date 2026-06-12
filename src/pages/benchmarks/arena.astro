@@ -1,0 +1,324 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import arenaData from '../../data/benchmarks/arena-snapshots.json';
+
+const matches = arenaData.matches;
+
+function sideValue(map: Record<string, number> | undefined, side: 'A' | 'B') {
+  return map?.[side] ?? 0;
+}
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title="Resyst Arena"
+      description="Resyst Arena turn-based model duel benchmark evidence, replay artifacts, tactical metrics and methodology."
+    />
+    <style>
+      main {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        background:
+          radial-gradient(circle at 12% 0%, rgba(201, 168, 76, 0.15), transparent 32rem),
+          radial-gradient(circle at 88% 10%, rgba(96, 165, 250, 0.12), transparent 34rem),
+          var(--bg-deep);
+        color: var(--text-primary);
+      }
+
+      .arena-hero,
+      .arena-section {
+        width: min(1180px, calc(100% - 2rem));
+        margin-inline: auto;
+      }
+
+      .arena-hero {
+        padding: clamp(4rem, 9vw, 8rem) 0 clamp(2.5rem, 6vw, 4rem);
+      }
+
+      .back-link {
+        display: inline-flex;
+        margin-bottom: 1.5rem;
+        color: var(--text-secondary);
+        font-family: var(--font-mono);
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 980px;
+        margin: 0;
+        font-size: clamp(3.4rem, 9vw, 7rem);
+        line-height: 0.9;
+        letter-spacing: -0.06em;
+        font-weight: 300;
+      }
+
+      h1 em,
+      h2 em {
+        color: var(--accent);
+        font-style: italic;
+      }
+
+      .lead {
+        max-width: 780px;
+        margin-top: 1.2rem;
+        color: var(--text-secondary);
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        line-height: 1.8;
+      }
+
+      .principles {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .panel,
+      .match-card {
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        background: linear-gradient(145deg, rgba(232, 220, 200, 0.07), rgba(16, 16, 26, 0.92));
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+      }
+
+      .panel {
+        padding: 1.35rem;
+      }
+
+      .panel h3 {
+        margin: 0 0 0.5rem;
+      }
+
+      .panel p,
+      .match-card p,
+      .match-card li {
+        color: var(--text-secondary);
+      }
+
+      .arena-section {
+        padding: clamp(2rem, 6vw, 4.5rem) 0;
+      }
+
+      .section-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 1.5rem;
+        margin-bottom: 1.4rem;
+      }
+
+      .section-head h2 {
+        margin: 0;
+        font-size: clamp(2.2rem, 5vw, 4rem);
+        line-height: 0.95;
+      }
+
+      .section-note {
+        max-width: 540px;
+        margin: 0;
+        color: var(--text-secondary);
+      }
+
+      .matches {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .match-card {
+        padding: clamp(1.2rem, 3vw, 1.8rem);
+      }
+
+      .match-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .match-title {
+        margin: 0;
+        font-size: clamp(1.45rem, 3vw, 2.2rem);
+        line-height: 1.05;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        padding: 0.35rem 0.75rem;
+        border: 1px solid var(--border-accent);
+        border-radius: 999px;
+        color: var(--accent);
+        background: rgba(201, 168, 76, 0.08);
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .duel-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin: 1rem 0;
+      }
+
+      .side {
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.035);
+      }
+
+      .side.winner {
+        border-color: var(--border-accent);
+        background: rgba(201, 168, 76, 0.08);
+      }
+
+      .side-label {
+        color: var(--text-muted);
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+
+      .side-name {
+        display: block;
+        margin-top: 0.3rem;
+        color: var(--text-heading);
+        font-weight: 700;
+        overflow-wrap: anywhere;
+      }
+
+      .metric-strip {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 0.8fr)) minmax(260px, 1.8fr);
+        gap: 0.75rem;
+        margin-top: 1rem;
+      }
+
+      .metric {
+        padding: 0.8rem;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        background: rgba(0, 0, 0, 0.18);
+      }
+
+      .metric span {
+        display: block;
+        color: var(--text-muted);
+        font-family: var(--font-mono);
+        font-size: 0.74rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .metric strong {
+        display: block;
+        margin-top: 0.28rem;
+        color: var(--text-heading);
+        font-family: var(--font-mono);
+        font-size: 1rem;
+      }
+
+      code {
+        font-size: 0.76rem;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
+      }
+
+      @media (max-width: 900px) {
+        .principles,
+        .duel-grid,
+        .metric-strip {
+          grid-template-columns: 1fr;
+        }
+
+        .section-head,
+        .match-top {
+          display: block;
+        }
+
+        .pill {
+          margin-top: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section class="arena-hero">
+        <a class="back-link" href="/benchmarks">← Back to benchmarks</a>
+        <h1>Resyst <em>Arena</em></h1>
+        <p class="lead">
+          A deterministic turn-based duel benchmark for spatial strategy, legal action discipline and tactical continuity. The battle result answers who won the match; latency, tokens and cost stay telemetry, not hidden scoring.
+        </p>
+        <div class="principles">
+          <article class="panel">
+            <h3>Turn-based first</h3>
+            <p>Each model sees a compact board state and chooses legal actions. No real-time race, no latency penalty inside the combat score.</p>
+          </article>
+          <article class="panel">
+            <h3>Evidence before myth</h3>
+            <p>A single replay is interesting evidence. Public ranking claims require repeated side-swapped series across seeds.</p>
+          </article>
+          <article class="panel">
+            <h3>Replayable artifacts</h3>
+            <p>Every highlighted match links back to raw replay JSON and summary metrics so claims can be audited later.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="arena-section">
+        <div class="section-head">
+          <h2>Highlighted <em>matches</em></h2>
+          <p class="section-note">Current MVP snapshots synced from local benchmark artifacts. These are evidence objects, not a final Arena leaderboard.</p>
+        </div>
+        <div class="matches">
+          {matches.map((match) => (
+            <article class="match-card">
+              <div class="match-top">
+                <div>
+                  <h3 class="match-title">{match.title}</h3>
+                  <p>Seed {match.seed ?? 'fixed'} · {match.turns} turns · {match.winner_reason}</p>
+                </div>
+                <span class="pill">Winner: {match.winner_label}</span>
+              </div>
+
+              <div class="duel-grid">
+                <div class:list={['side', match.winner === 'A' && 'winner']}>
+                  <span class="side-label">Side A</span>
+                  <span class="side-name">{match.entrants.A}</span>
+                </div>
+                <div class:list={['side', match.winner === 'B' && 'winner']}>
+                  <span class="side-label">Side B</span>
+                  <span class="side-name">{match.entrants.B}</span>
+                </div>
+              </div>
+
+              <div class="metric-strip" aria-label={`Metrics for ${match.id}`}>
+                <div class="metric"><span>Core HP A/B</span><strong>{sideValue(match.core_hp, 'A')} / {sideValue(match.core_hp, 'B')}</strong></div>
+                <div class="metric"><span>Damage A/B</span><strong>{sideValue(match.core_damage_dealt, 'A')} / {sideValue(match.core_damage_dealt, 'B')}</strong></div>
+                <div class="metric"><span>Resources A/B</span><strong>{sideValue(match.resources_collected, 'A')} / {sideValue(match.resources_collected, 'B')}</strong></div>
+                <div class="metric"><span>Invalid A/B</span><strong>{sideValue(match.invalid_actions, 'A')} / {sideValue(match.invalid_actions, 'B')}</strong></div>
+                <div class="metric"><span>Replay</span><strong><code>{match.artifacts.replay}</code></strong></div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,3 @@
+/benchmarks https://benchmarks.resyst.cl 301
+/benchmarks/ https://benchmarks.resyst.cl 301
+/benchmarks/* https://benchmarks.resyst.cl/:splat 301

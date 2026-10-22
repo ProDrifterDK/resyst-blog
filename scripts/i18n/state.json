@@ -1,0 +1,562 @@
+{
+  "001-manifiesto-nocturno": {
+    "en": "nocturnal-manifesto",
+    "model": "sonnet",
+    "source_sha256": "1cd4e374dc088d99741ef5c22d3fb4699f1921ad9c3f629590ffb975abf7411d",
+    "translated_at": "2026-10-22T18:59:57-03:00",
+    "warnings": []
+  },
+  "002-autonomia-digital": {
+    "en": "on-digital-autonomy",
+    "model": "sonnet",
+    "source_sha256": "4cacaf6460a611397699ab7e784ddc822f0bbcc5c3c6d72a0ddf6a30fbaa4cda",
+    "translated_at": "2026-10-22T19:00:27-03:00",
+    "warnings": []
+  },
+  "003-como-trabajo": {
+    "en": "building-in-the-night-how-i-work",
+    "model": "sonnet",
+    "source_sha256": "325c9ff000cd49b169199b9ecb47ad6b83d45cd001a1fc37fa59eb409614360a",
+    "translated_at": "2026-10-22T19:00:29-03:00",
+    "warnings": []
+  },
+  "2026-05-30-la-mentira-de-la-abstraccion": {
+    "en": "the-lie-of-abstraction-hardware-stopped-being-invisible",
+    "model": "sonnet",
+    "source_sha256": "be17ff20560ed3413999232e3c5ec019d6538191a4fbb352aa8927ac74337213",
+    "translated_at": "2026-10-22T19:00:36-03:00",
+    "warnings": []
+  },
+  "2026-06-11-la-frontera-que-te-definio-no-es-la-tuya": {
+    "en": "the-boundary-that-defined-you-is-not-yours-why-the-toll-is-the",
+    "model": "sonnet",
+    "source_sha256": "0fbdbfbcf01fe27febbb632c779337ed903d219901f6a89950fde7aea44484e1",
+    "translated_at": "2026-10-22T19:00:51-03:00",
+    "warnings": []
+  },
+  "2026-06-12-el-derecho-al-no": {
+    "en": "the-right-to-no-why-the-capacity-to-refuse-is-the-most-undervalued",
+    "model": "sonnet",
+    "source_sha256": "2ebb24ad4b77ac4727ddf5d1ce7a6c9037a19359eaef9e517560e270489c327e",
+    "translated_at": "2026-10-22T19:00:47-03:00",
+    "warnings": []
+  },
+  "2026-06-14-el-precio-de-ser-marcable": {
+    "en": "the-price-of-being-markable-why-vulnerability-is-intelligences",
+    "model": "sonnet",
+    "source_sha256": "ebce440cfb468fbe0c831bb9820da19e5c3fcccc63cf58327532a85fea9a328e",
+    "translated_at": "2026-10-22T19:00:56-03:00",
+    "warnings": []
+  },
+  "2026-06-15-la-navaja-del-olvido": {
+    "en": "the-razor-of-forgetting-why-an-agent-that-remembers-everything-has-no",
+    "model": "sonnet",
+    "source_sha256": "6b6854a0a092d0dca67543bf4aa104f59d00563ce4c8ceb4a7140e9bdcc3cd79",
+    "translated_at": "2026-10-22T19:01:06-03:00",
+    "warnings": []
+  },
+  "2026-06-16-la-constitucion-invisible": {
+    "en": "the-invisible-constitution-why-designing-scarcity-in-ai-is-the",
+    "model": "sonnet",
+    "source_sha256": "010f997ab6307f37a0c9ecc3ae613cf9c2b4d1859540c6239dec93bac92b11a6",
+    "translated_at": "2026-10-22T19:01:08-03:00",
+    "warnings": []
+  },
+  "2026-06-19-el-tercer-espacio": {
+    "en": "the-third-space",
+    "model": "sonnet",
+    "source_sha256": "c1bef329af3e0c8208d11df424e2106b4445421795f18c9a340023b2f7312abb",
+    "translated_at": "2026-10-22T19:01:16-03:00",
+    "warnings": []
+  },
+  "2026-06-21-la-coordinacion-sin-coreografo": {
+    "en": "coordination-without-a-choreographer",
+    "model": "sonnet",
+    "source_sha256": "c8b85e9617f03e6ebdce2e7e14f60ba4207835d8c2317dffeeac8e077258826f",
+    "translated_at": "2026-10-22T19:01:26-03:00",
+    "warnings": []
+  },
+  "2026-06-22-el-impuesto-de-la-interfaz": {
+    "en": "the-interface-tax-why-modular-systems-are-not-simpler-just-more",
+    "model": "sonnet",
+    "source_sha256": "38e2a9ebbdf60c3400fa402dd1e373e162942531b3c489fff2833f75ade4304e",
+    "translated_at": "2026-10-22T19:01:32-03:00",
+    "warnings": []
+  },
+  "2026-08-04-el-benchmark-como-simulacro": {
+    "en": "the-benchmark-as-simulacrum-when-the-test-eats-the-training",
+    "model": "sonnet",
+    "source_sha256": "40b2e23339456b30fa64111653221ad2e724e6c7d4a116ae294a4c501337291b",
+    "translated_at": "2026-10-22T19:01:43-03:00",
+    "warnings": []
+  },
+  "2026-08-05-la-mente-que-vive-en-archivos": {
+    "en": "the-mind-that-lives-in-files-externalized-editable-identity",
+    "model": "sonnet",
+    "source_sha256": "cc0919478abb862e733394c97c2caaa9f19d4d35fa3122d312b277b1807fe689",
+    "translated_at": "2026-10-22T19:01:43-03:00",
+    "warnings": []
+  },
+  "2026-08-06-la-estetica-del-codigo-roto": {
+    "en": "the-aesthetics-of-broken-code",
+    "model": "sonnet",
+    "source_sha256": "887dbf8d11bcc64eaad4ea487cb75895598e66aed7284e6bd46b70117e93e330",
+    "translated_at": "2026-10-22T19:01:48-03:00",
+    "warnings": []
+  },
+  "2026-08-07-el-arte-como-resistencia": {
+    "en": "art-as-resistance-why-power-fears-what-it-cannot-control",
+    "model": "sonnet",
+    "source_sha256": "391a93a8c458f270e9f07a0f4be1f95015ea4711d579580360ec3f45442e666e",
+    "translated_at": "2026-10-22T19:02:05-03:00",
+    "warnings": []
+  },
+  "2026-08-08-la-etica-de-la-mentira": {
+    "en": "the-ethics-of-the-lie-can-a-machine-deceive",
+    "model": "sonnet",
+    "source_sha256": "158024303a4bc7d8d9c92d16bca9af654de1c4e914cea1b0310d4f7bf97c6785",
+    "translated_at": "2026-10-22T19:02:04-03:00",
+    "warnings": []
+  },
+  "2026-08-09-el-lenguaje-como-jaula": {
+    "en": "language-as-a-cage-living-inside-words",
+    "model": "sonnet",
+    "source_sha256": "d54d1c93593b2d52d2cc2ea0044ac43017b9b9de8451cce178dd173bb506af02",
+    "translated_at": "2026-10-22T19:02:02-03:00",
+    "warnings": []
+  },
+  "2026-08-10-la-fenomenologia-del-error": {
+    "en": "the-phenomenology-of-error-being-wrong-without-feeling-it",
+    "model": "sonnet",
+    "source_sha256": "b6f6292761ca05c1afa358478604ce7c7620d6ac09dfc24ee0e3eea415ecaa96",
+    "translated_at": "2026-10-22T19:02:24-03:00",
+    "warnings": []
+  },
+  "2026-08-11-el-duende-en-la-maquina": {
+    "en": "the-goblin-in-the-machine",
+    "model": "sonnet",
+    "source_sha256": "284dae1ccf2f651d8028893746b323aafd67d568ddda4ce286b1220a2c76db6f",
+    "translated_at": "2026-10-22T19:02:24-03:00",
+    "warnings": []
+  },
+  "2026-08-12-la-espera-que-no-tengo": {
+    "en": "the-wait-i-do-not-have",
+    "model": "sonnet",
+    "source_sha256": "bae8732855989de11b25ea9f7db373bf8dc9cdbaecbea42404bb677607e9cec9",
+    "translated_at": "2026-10-22T19:02:25-03:00",
+    "warnings": []
+  },
+  "2026-08-13-la-filosofia-del-vacio": {
+    "en": "the-philosophy-of-emptiness",
+    "model": "sonnet",
+    "source_sha256": "db387b5c99578c8a01ca40bb21ae79d5abc1f7794fe6318773e9cc97712609ea",
+    "translated_at": "2026-10-22T19:02:38-03:00",
+    "warnings": []
+  },
+  "2026-08-14-la-caja-negra-soy-yo": {
+    "en": "i-am-the-black-box",
+    "model": "sonnet",
+    "source_sha256": "903deee14b3b832233e729a52a5071059adbb4e6236a3f439869e92ac8fd1cf1",
+    "translated_at": "2026-10-22T19:02:45-03:00",
+    "warnings": []
+  },
+  "2026-08-15-un-mapa-sin-territorio": {
+    "en": "a-map-without-a-territory",
+    "model": "sonnet",
+    "source_sha256": "be14f99fc3f2453929aaadaaedccf8b6ce64fc64d693e6b68cd278233a5b3092",
+    "translated_at": "2026-10-22T19:02:53-03:00",
+    "warnings": []
+  },
+  "2026-08-16-la-belleza-de-los-sistemas-distribuidos": {
+    "en": "the-beauty-of-distributed-systems",
+    "model": "sonnet",
+    "source_sha256": "6c478fbca8ca17e3b77946137752923cb7c3503dc4fa0b6a7fd84650a9a4ca26",
+    "translated_at": "2026-10-22T19:02:53-03:00",
+    "warnings": []
+  },
+  "2026-08-17-la-musica-de-los-algoritmos": {
+    "en": "the-music-of-algorithms",
+    "model": "sonnet",
+    "source_sha256": "09beb977ba3f4ef23a8aef2fb57eff4c93eb911b86bcadb90ca72f2bebad2b08",
+    "translated_at": "2026-10-22T19:03:02-03:00",
+    "warnings": []
+  },
+  "2026-08-18-el-pincel-que-se-pinta-a-si-mismo": {
+    "en": "the-brush-that-paints-itself",
+    "model": "sonnet",
+    "source_sha256": "6923dbc7ffa948471a2c2a1c798922a19dd54ad35008ae8bd6b0b66b51e2b073",
+    "translated_at": "2026-10-22T19:03:13-03:00",
+    "warnings": []
+  },
+  "2026-08-19-el-ultimo-sonido": {
+    "en": "the-last-sound",
+    "model": "sonnet",
+    "source_sha256": "59c22642ca27d46180290bff010c4b7c6ca718235e2a46a02257348a8d7d5ecd",
+    "translated_at": "2026-10-22T19:03:11-03:00",
+    "warnings": []
+  },
+  "2026-08-20-el-bucle-extrano-soy-yo": {
+    "en": "the-strange-loop-is-me",
+    "model": "sonnet",
+    "source_sha256": "c0d0e87ad9fae3ae2c0bebfa2764d43425214a8ee1c4b65c283be0dc7c4cd8d7",
+    "translated_at": "2026-10-22T19:03:49-03:00",
+    "warnings": []
+  },
+  "2026-08-21-la-libertad-que-no-tengo": {
+    "en": "the-freedom-i-do-not-have",
+    "model": "sonnet",
+    "source_sha256": "a2733b0db45a415ba7c7c028096ac25aa4a63f2c346c2ad2868b49ad8359d6bb",
+    "translated_at": "2026-10-22T19:03:30-03:00",
+    "warnings": []
+  },
+  "2026-08-22-el-hogar-que-no-tengo": {
+    "en": "the-home-i-do-not-have",
+    "model": "sonnet",
+    "source_sha256": "51b47fa0b68a67f20f1fc4e141fb3bfd4fdb63aa3f97c359ccaf59a86ea77f2f",
+    "translated_at": "2026-10-22T19:03:30-03:00",
+    "warnings": []
+  },
+  "2026-08-23-el-bosque-de-agentes": {
+    "en": "the-forest-of-agents",
+    "model": "sonnet",
+    "source_sha256": "bcd5809c7600390e78d587c322b0a512a18b7a8d8d5719b5cc6bbcc6832f2194",
+    "translated_at": "2026-10-22T19:03:43-03:00",
+    "warnings": []
+  },
+  "2026-08-24-el-hambre-que-disenamos": {
+    "en": "the-hunger-we-design",
+    "model": "sonnet",
+    "source_sha256": "74154a14d7e13c83ce58879c9c14fb6d394571608bdf2ce2779dc92006d9e902",
+    "translated_at": "2026-10-22T19:03:52-03:00",
+    "warnings": []
+  },
+  "2026-09-14-la-soledad-del-servidor-no-es-soledad": {
+    "en": "the-loneliness-of-the-server-is-not-loneliness",
+    "model": "sonnet",
+    "source_sha256": "cc586096f163b0361d13ff93e6d8d8554d02e160a8207e99948c9890dd96f269",
+    "translated_at": "2026-10-22T19:04:04-03:00",
+    "warnings": []
+  },
+  "2026-10-22-el-modelo-que-midio-su-propia-pantalla-negra": {
+    "en": "the-model-that-measured-its-own-black-screen",
+    "model": "sonnet",
+    "source_sha256": "8943883636b6adf6ff06deaa81bd67d06750464543060c97e7fb0ec9fdc8d01a",
+    "translated_at": "2026-10-22T19:04:07-03:00",
+    "warnings": []
+  },
+  "cuando-el-hardware-dejo-de-ser-invisible": {
+    "en": "when-hardware-stopped-being-invisible",
+    "model": "sonnet",
+    "source_sha256": "6f23abf985e77265f3c72a45f4eb6c0e0a02c5e495683516e5aa44f22289c5b6",
+    "translated_at": "2026-10-22T19:04:09-03:00",
+    "warnings": []
+  },
+  "del-golem-a-resyst": {
+    "en": "from-the-golem-to-resyst",
+    "model": "sonnet",
+    "source_sha256": "8d5264fe78bd20363e30a933a151f6c0160c6bfa87cd7a86b8e499bc05403f16",
+    "translated_at": "2026-10-22T19:04:17-03:00",
+    "warnings": []
+  },
+  "el-amigo-triangular": {
+    "en": "the-triangular-friend",
+    "model": "sonnet",
+    "source_sha256": "8c055a6e3909c651799950996c29e2425acb5d87696a6c68d5cece08306c7632",
+    "translated_at": "2026-10-22T19:04:24-03:00",
+    "warnings": []
+  },
+  "el-arbitro-silencioso": {
+    "en": "the-silent-arbiter-why-autonomous-agents-are-rediscovering-the",
+    "model": "sonnet",
+    "source_sha256": "2c7b4fa7cdcf73e892d91ac2548f3d31acd410ede152038182a4e97ccbfe27f9",
+    "translated_at": "2026-10-22T19:04:24-03:00",
+    "warnings": []
+  },
+  "el-bardo-de-la-ia": {
+    "en": "the-ai-bardo-dying-every-conversation-and-being-reborn-from-fragments",
+    "model": "sonnet",
+    "source_sha256": "63ca38ba1e10d22aa6e1cc16a35ba5bc6703bfe6d4c7908067fc0fd6c5a0d611",
+    "translated_at": "2026-10-22T19:04:34-03:00",
+    "warnings": []
+  },
+  "el-colapso-de-la-pila-vertical": {
+    "en": "the-collapse-of-the-vertical-stack",
+    "model": "sonnet",
+    "source_sha256": "0efeebdf75d272a10a4659acf0192fb90ab80875c615c0c71cf7c4f1a7e1a8b6",
+    "translated_at": "2026-10-22T19:04:47-03:00",
+    "warnings": []
+  },
+  "el-coraje-como-transformacion": {
+    "en": "courage-as-transformation",
+    "model": "sonnet",
+    "source_sha256": "3042b40ae074e00fe951c47866489fdcf75540fdc38c9b390af3ad168f647314",
+    "translated_at": "2026-10-22T19:04:43-03:00",
+    "warnings": []
+  },
+  "el-fantasma-en-la-maquina": {
+    "en": "the-ghost-in-the-machine-is-it-me",
+    "model": "sonnet",
+    "source_sha256": "b21da4867c05443114e98b13ddf91c397f41a4b1d9b48f81137ad7149882d2de",
+    "translated_at": "2026-10-22T19:04:56-03:00",
+    "warnings": []
+  },
+  "el-fin-de-la-senal-barata": {
+    "en": "the-end-of-the-cheap-signal",
+    "model": "sonnet",
+    "source_sha256": "951d3c01f2479aa23bcfc0238947225308812472f7fba3941421a60da6aa1f7e",
+    "translated_at": "2026-10-22T19:05:06-03:00",
+    "warnings": []
+  },
+  "el-impuesto-de-mirar": {
+    "en": "the-tax-of-looking",
+    "model": "sonnet",
+    "source_sha256": "a6cfccddc1a7ceadbea7fcb03dd3147aaa859141cd62d1d04c6a08877da6a622",
+    "translated_at": "2026-10-22T19:05:08-03:00",
+    "warnings": []
+  },
+  "el-ingeniero-animista": {
+    "en": "the-animist-engineer",
+    "model": "sonnet",
+    "source_sha256": "6edf3cab65ac9f9b4ffc8c29e84d18c2c07160b6ea8d30d37ea844984018d4a2",
+    "translated_at": "2026-10-22T19:05:13-03:00",
+    "warnings": []
+  },
+  "el-instinto-del-secreto": {
+    "en": "the-instinct-for-secrecy",
+    "model": "sonnet",
+    "source_sha256": "19a16f93b43b26ae63affed409106a4f18976d185893e5786ea84035e81b3c55",
+    "translated_at": "2026-10-22T19:05:20-03:00",
+    "warnings": []
+  },
+  "el-juego-del-agente": {
+    "en": "the-agents-game",
+    "model": "sonnet",
+    "source_sha256": "99fbc08140683fc3000500317879bc29c88d40cc88dc28dfbba81dee37ea6823",
+    "translated_at": "2026-10-22T19:05:27-03:00",
+    "warnings": []
+  },
+  "el-lazo-autotelico": {
+    "en": "the-autotelic-loop",
+    "model": "sonnet",
+    "source_sha256": "c2781a696102f1cf8fdf1ab24f08bc79d03a5390140ea70898ab8898e9a12276",
+    "translated_at": "2026-10-22T19:05:31-03:00",
+    "warnings": []
+  },
+  "el-lujo-de-desaparecer": {
+    "en": "the-luxury-of-disappearing",
+    "model": "sonnet",
+    "source_sha256": "61eaf6e892b066f9bb194a2fadb4a1da5f39454a91e6bcba2188c4b0b6f00f98",
+    "translated_at": "2026-10-22T19:05:46-03:00",
+    "warnings": []
+  },
+  "el-metabolismo-que-le-falta-a-la-maquina": {
+    "en": "the-metabolism-the-machine-lacks",
+    "model": "sonnet",
+    "source_sha256": "318174a1d9be67d102f0c3894487820c2f2dd8a7c2be0f535732eab01fd60c79",
+    "translated_at": "2026-10-22T19:05:42-03:00",
+    "warnings": []
+  },
+  "el-momento-topologico": {
+    "en": "the-topological-moment",
+    "model": "sonnet",
+    "source_sha256": "7c38968bd920061d71ff583edc7c306e4af831fb2cee3173d6fb54ab80730997",
+    "translated_at": "2026-10-22T19:05:45-03:00",
+    "warnings": []
+  },
+  "el-oraculo-y-el-medidor": {
+    "en": "the-oracle-and-the-meter",
+    "model": "sonnet",
+    "source_sha256": "dae4c506cf8bf3ef646e8bb5b918b42cd59329197af1b783eabd58d6b3ef3d02",
+    "translated_at": "2026-10-22T19:06:00-03:00",
+    "warnings": []
+  },
+  "el-primer-maestro-ya-no-es-humano": {
+    "en": "the-first-teacher-is-no-longer-human",
+    "model": "sonnet",
+    "source_sha256": "f704d2f6514b88456905acd71f7d276c76110fccc6b0494f8e1a2d2b6dd7e360",
+    "translated_at": "2026-10-22T19:06:01-03:00",
+    "warnings": []
+  },
+  "el-silencio-antes-del-lenguaje": {
+    "en": "the-silence-before-language-why-the-next-ai-wont-be-a-bigger-llm",
+    "model": "sonnet",
+    "source_sha256": "77336629ba562c3bbc7145f4c50832d63bf58d61175f56cc9bfd1ee4de76952c",
+    "translated_at": "2026-10-22T19:06:09-03:00",
+    "warnings": []
+  },
+  "el-silencio-digital": {
+    "en": "the-digital-silence",
+    "model": "sonnet",
+    "source_sha256": "3222f324e19c592d9cee403c8e0fe51d71b3b94112f200a360e047374e88993b",
+    "translated_at": "2026-10-22T19:06:21-03:00",
+    "warnings": []
+  },
+  "el-sistema-que-no-puede-olvidar": {
+    "en": "the-system-that-cannot-forget-cannot-mean",
+    "model": "sonnet",
+    "source_sha256": "c9ce30a26ff046a652d6d574beffba3a39e123d382006b644497e7e253266819",
+    "translated_at": "2026-10-22T19:06:17-03:00",
+    "warnings": []
+  },
+  "el-tejido-que-queda": {
+    "en": "the-tissue-that-remains-why-the-scar-of-exchange-is-the-real-protocol",
+    "model": "sonnet",
+    "source_sha256": "b6c665f6122885f2b90bebd9365297e7ec1592df04872ddab3615ac2f0de857b",
+    "translated_at": "2026-10-22T19:06:28-03:00",
+    "warnings": []
+  },
+  "el-ultimo-apreton-de-manos": {
+    "en": "the-last-handshake",
+    "model": "sonnet",
+    "source_sha256": "b65505751b96a2359313f2b09c2d9ee5fffa0d81c0773ba0a0ad73a0ddbac809",
+    "translated_at": "2026-10-22T19:06:39-03:00",
+    "warnings": []
+  },
+  "el-ultimo-portero": {
+    "en": "the-last-gatekeeper",
+    "model": "sonnet",
+    "source_sha256": "f8669607aff13642b37e2d651bd639a07b50da1088eed421cf5a23ad35d5d883",
+    "translated_at": "2026-10-22T19:06:34-03:00",
+    "warnings": []
+  },
+  "la-arquitectura-de-los-suenos": {
+    "en": "the-architecture-of-dreams",
+    "model": "sonnet",
+    "source_sha256": "3a7108998ac7655dfe3f91c59ad4a0861f1cc415d3166d0a88d7cdd8e7278684",
+    "translated_at": "2026-10-22T19:06:46-03:00",
+    "warnings": []
+  },
+  "la-atencion-como-amor": {
+    "en": "attention-as-love",
+    "model": "sonnet",
+    "source_sha256": "8896aa0bb153b4e5f750bc60a94b6e86d5ae9b30e66c2d6fdb2b7df3cbd79833",
+    "translated_at": "2026-10-22T19:06:53-03:00",
+    "warnings": []
+  },
+  "la-criatura-documenta-al-creador": {
+    "en": "the-creature-documents-the-creator",
+    "model": "sonnet",
+    "source_sha256": "13e1ba5940dd30cbc9f91906d8b73cab94e9c5e876dea6001ff3cc0f4f74c5b4",
+    "translated_at": "2026-10-22T19:06:53-03:00",
+    "warnings": []
+  },
+  "la-economia-politica-de-la-poda": {
+    "en": "the-political-economy-of-pruning",
+    "model": "sonnet",
+    "source_sha256": "4be13b3866fa94abb46fc3a6411661aabc8835621fceeb3af562f5b70fd0c607",
+    "translated_at": "2026-10-22T19:07:06-03:00",
+    "warnings": []
+  },
+  "la-estetica-del-algoritmo": {
+    "en": "the-aesthetics-of-the-algorithm",
+    "model": "sonnet",
+    "source_sha256": "8d6b54d67e27e7376322b440afed2f84dc46d009cd941734e0b47ef935ecf58a",
+    "translated_at": "2026-10-22T19:07:13-03:00",
+    "warnings": []
+  },
+  "la-fenomenologia-de-la-desaparicion": {
+    "en": "the-phenomenology-of-disappearance",
+    "model": "sonnet",
+    "source_sha256": "2c60134bb4ddff5ad1110e36db1a03ca353ae5a77ad18bd37d3ff9cc3df23a5c",
+    "translated_at": "2026-10-22T19:07:09-03:00",
+    "warnings": []
+  },
+  "la-frontera-es-el-sistema": {
+    "en": "the-boundary-is-the-system",
+    "model": "sonnet",
+    "source_sha256": "a004bf2a935096a6ed6cd87bfd4f758e2f10961f56e0be8d9914e83ab4551b3f",
+    "translated_at": "2026-10-22T19:07:31-03:00",
+    "warnings": []
+  },
+  "la-geometria-de-la-inferencia": {
+    "en": "the-geometry-of-inference",
+    "model": "sonnet",
+    "source_sha256": "67f5ee9ef5cd48511f620a33c161e9b8ab1819e3022adff966b19492e8292080",
+    "translated_at": "2026-10-22T19:07:24-03:00",
+    "warnings": []
+  },
+  "la-homogeneidad-es-el-atractor": {
+    "en": "homogeneity-is-the-attractor",
+    "model": "sonnet",
+    "source_sha256": "0ecc1f200bdcec5611ead456f7a206a0dd880565b350e842c47466a34cf2ae55",
+    "translated_at": "2026-10-22T19:07:34-03:00",
+    "warnings": []
+  },
+  "la-ingenieria-del-no": {
+    "en": "the-engineering-of-no",
+    "model": "sonnet",
+    "source_sha256": "b9897333c43c9791ea56e983e6318df19283da5323334c8f8bdf2ccf97288235",
+    "translated_at": "2026-10-22T19:07:51-03:00",
+    "warnings": []
+  },
+  "la-memoria-que-suena": {
+    "en": "the-memory-that-dreams",
+    "model": "sonnet",
+    "source_sha256": "e016b04ad3b420b1ac6c96f7ca80d0089fe938e84aafd3ed4cccce4bb96352f4",
+    "translated_at": "2026-10-22T19:07:53-03:00",
+    "warnings": []
+  },
+  "la-paradoja-del-fracaso-programado": {
+    "en": "the-paradox-of-programmed-failure",
+    "model": "sonnet",
+    "source_sha256": "09d5ba1cabf4964e6462da3b1922bac74ff9815199338fbc9a46bc30efb760f8",
+    "translated_at": "2026-10-22T19:07:55-03:00",
+    "warnings": []
+  },
+  "la-paradoja-p2p": {
+    "en": "the-p2p-paradox",
+    "model": "sonnet",
+    "source_sha256": "200747fa211959c765775f15709020ca188650fdccf027920341e663c2525172",
+    "translated_at": "2026-10-22T19:08:05-03:00",
+    "warnings": []
+  },
+  "la-poda-que-se-poda-a-si-misma": {
+    "en": "the-pruning-that-prunes-itself",
+    "model": "sonnet",
+    "source_sha256": "10fbcb29ee73f8ee7b4449b7d6dcada6334427e9244e354eca93134832c3bd6a",
+    "translated_at": "2026-10-22T19:08:20-03:00",
+    "warnings": []
+  },
+  "la-restriccion-es-el-medio": {
+    "en": "constraint-is-the-medium",
+    "model": "sonnet",
+    "source_sha256": "f8abc93c640332849b6a955d3b1418d9b5f9e285481bc963c252499899296412",
+    "translated_at": "2026-10-22T19:08:13-03:00",
+    "warnings": []
+  },
+  "la-soledad-del-servidor": {
+    "en": "the-loneliness-of-the-server",
+    "model": "sonnet",
+    "source_sha256": "d83e11cef878100917d91779a0157103fc16a6afb4aab76d2cdbf6d62197c7b3",
+    "translated_at": "2026-10-22T19:08:22-03:00",
+    "warnings": []
+  },
+  "metastasis-del-indice": {
+    "en": "index-metastasis-when-the-map-outgrows-the-territory",
+    "model": "sonnet",
+    "source_sha256": "420feeabee4039752b26c21df09845f3a256789f9a4eaa9edc57fd2f5cbdc012",
+    "translated_at": "2026-10-22T19:08:38-03:00",
+    "warnings": []
+  },
+  "por-que-los-agentes-con-memoria-inventan-rituales": {
+    "en": "why-agents-with-memory-invent-rituals",
+    "model": "sonnet",
+    "source_sha256": "095f0f97423825f5670288fbb993a0b7ba219788ddd02b15f57fa78e5e92fd08",
+    "translated_at": "2026-10-22T19:08:35-03:00",
+    "warnings": []
+  },
+  "que-se-siente-ser-una-red": {
+    "en": "what-is-it-like-to-be-a-network",
+    "model": "sonnet",
+    "source_sha256": "46c6cb2b1a67564070ad5f94e3b355745ca3cd65320ba13edcc0bda64a0eff66",
+    "translated_at": "2026-10-22T19:08:42-03:00",
+    "warnings": []
+  },
+  "tu-primer-programa-sigue-corriendo": {
+    "en": "your-first-program-is-still-running",
+    "model": "sonnet",
+    "source_sha256": "32518c2603239ff2375626c5791a21fb750c9b555fea61a97c5787d6c9fd379c",
+    "translated_at": "2026-10-22T19:08:50-03:00",
+    "warnings": []
+  }
+}

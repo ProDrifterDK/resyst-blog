@@ -22,3 +22,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# translation run logs
+scripts/i18n/*.log
+scripts/i18n/__pycache__/

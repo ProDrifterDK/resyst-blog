@@ -23,6 +23,7 @@ ES_LINK = re.compile(r"(\(|\s)/blog/([^/)#\s]+)(/?)\)?")
 def main() -> int:
     state = json.loads(STATE.read_text(encoding="utf-8"))
     mapping = {es: data["en"] for es, data in state.items()}
+    final_slugs = set(mapping.values())
     unresolved: set[tuple[str, str]] = set()
     changed = 0
 
@@ -32,7 +33,7 @@ def main() -> int:
         def rewrite(pattern: re.Pattern[str], localized: bool, text_in: str) -> str:
             def repl(match: re.Match[str]) -> str:
                 lead, slug, slash = match.group(1), match.group(2), match.group(3)
-                if slug in ("tags", "index"):
+                if slug in ("tags", "index") or slug in final_slugs:
                     return match.group(0)
                 if slug not in mapping:
                     unresolved.add((path.name, slug))

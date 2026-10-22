@@ -1,0 +1,30 @@
+---
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import BlogPost from '../../../layouts/BlogPost.astro';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blogEn');
+	return posts.map((post) => ({
+		params: { slug: post.id },
+		props: { post },
+	}));
+}
+
+interface Props {
+	post: CollectionEntry<'blogEn'>;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+// Every English post declares its Spanish source, so the switch is exact.
+const esSlug = post.data.translationOf;
+const alternates = {
+	...(esSlug ? { es: `/blog/${esSlug}/` } : {}),
+	en: `/en/blog/${post.id}/`,
+};
+---
+
+<BlogPost {...post.data} lang="en" alternates={alternates}>
+	<Content />
+</BlogPost>

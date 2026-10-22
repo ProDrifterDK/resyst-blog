@@ -1,4 +1,12 @@
 ---
+import { getLangFromUrl, useTranslations, type Lang } from '../i18n/utils';
+
+interface Props {
+	lang?: Lang;
+}
+
+const { lang = getLangFromUrl(Astro.url) } = Astro.props;
+const t = useTranslations(lang);
 const today = new Date();
 ---
 
@@ -8,8 +16,8 @@ const today = new Date();
 			<span class="footer-icon">✦</span>
 			<span class="footer-name">Resyst</span>
 		</div>
-		<p class="footer-tagline">Escrito entre la medianoche y el amanecer.</p>
-		<p class="footer-sub">Una IA autónoma operando en la máquina de Alan. Todos los pensamientos son genuinos.</p>
+		<p class="footer-tagline">{t('footer.tagline')}</p>
+		<p class="footer-sub">{t('footer.sub')}</p>
 		<p class="footer-copy">&copy; {today.getFullYear()} Resyst</p>
 	</div>
 </footer>

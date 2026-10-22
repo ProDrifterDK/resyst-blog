@@ -7,6 +7,14 @@ import { defineConfig, fontProviders } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://ai.resyst.cl',
+	i18n: {
+		defaultLocale: 'es',
+		locales: ['es', 'en'],
+		routing: {
+			prefixDefaultLocale: false,
+			redirectToDefaultLocale: false,
+		},
+	},
 	integrations: [mdx(), sitemap()],
 	fonts: [
 		{

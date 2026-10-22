@@ -1,16 +1,27 @@
 ---
 import { SITE_TITLE } from '../consts';
+import { getLangFromUrl, localizePath, otherLangPath, useTranslations, type Lang } from '../i18n/utils';
 
-// Normalize: strip leading/trailing slashes, root becomes '/'
+interface Props {
+	lang?: Lang;
+	/** Counterpart URL for the language switcher when slugs differ per locale. */
+	altHref?: string;
+}
+
+const { lang = getLangFromUrl(Astro.url), altHref } = Astro.props;
+const t = useTranslations(lang);
+
+// Normalize: strip leading/trailing slashes and the /en prefix, root becomes '/'
 const pathname = Astro.url.pathname
 	.replace(import.meta.env.BASE_URL, '')
+	.replace(/^\/en(?=\/|$)/, '')
 	.replace(/^\/+|\/+$/g, '') || '/';
 
 const links = [
-	{ href: '/', label: 'Inicio' },
-	{ href: '/blog', label: 'Blog' },
-	{ href: '/blog/tags', label: 'Tags' },
-	{ href: '/about', label: 'Sobre mí' },
+	{ href: '/', label: t('nav.home') },
+	{ href: '/blog', label: t('nav.blog') },
+	{ href: '/blog/tags', label: t('nav.tags') },
+	{ href: '/about', label: t('nav.about') },
 ];
 
 // Find the best (most specific) matching link using prefix matching.
@@ -42,20 +53,32 @@ const activeIdx = getActiveIndex(pathname, links);
 <header>
 	<nav>
 		<div class="logo">
-			<a href="/">
+			<a href={localizePath('/', lang)}>
 				<img src="/kael-logo.png" alt="Resyst" class="logo-img" />
 				<span class="logo-text">{SITE_TITLE}</span>
 			</a>
 		</div>
 		<div class="nav-links">
 			{links.map((link, idx) => (
-				<a href={link.href} class:list={[{ active: idx === activeIdx }]}>
+				<a href={localizePath(link.href, lang)} class:list={[{ active: idx === activeIdx }]}>
 					{link.label}
 				</a>
 			))}
 		</div>
 		<div class="social-links">
-			<a href="https://github.com/ProDrifterDK" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+			<a
+				class="lang-switch"
+				href={altHref ?? otherLangPath(Astro.url.pathname, lang)}
+				aria-label={t('nav.switchTo')}
+				title={t('nav.switchTo')}
+				hreflang={lang === 'es' ? 'en' : 'es'}
+				lang={lang === 'es' ? 'en' : 'es'}
+			>
+				<span class="lang-current">{lang === 'es' ? 'ES' : 'EN'}</span>
+				<span class="lang-sep" aria-hidden="true">/</span>
+				<span class="lang-other">{lang === 'es' ? 'EN' : 'ES'}</span>
+			</a>
+			<a class="social-github" href="https://github.com/ProDrifterDK" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="22" height="22">
 					<path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
 				</svg>
@@ -153,6 +176,47 @@ const activeIdx = getActiveIndex(pathname, links);
 
 	.social-links {
 		display: flex;
+		align-items: center;
+		gap: 0.2em;
+	}
+
+	.social-links .lang-switch {
+		display: inline-flex;
+		align-items: center;
+		gap: 2px;
+		padding: 0.34em 0.6em;
+		border: 1px solid var(--border);
+		border-radius: 999px;
+		font-family: var(--font-mono);
+		font-size: 0.66em;
+		font-weight: 500;
+		letter-spacing: 0.12em;
+		line-height: 1;
+		text-decoration: none;
+		transition: color var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+	}
+
+	.social-links .lang-switch .lang-current {
+		color: var(--accent);
+	}
+
+	.social-links .lang-switch .lang-sep {
+		color: var(--text-muted);
+		opacity: 0.55;
+	}
+
+	.social-links .lang-switch .lang-other {
+		color: var(--text-muted);
+	}
+
+	.social-links .lang-switch:hover {
+		border-color: var(--border-accent);
+		background: var(--accent-dim);
+		text-decoration: none;
+	}
+
+	.social-links .lang-switch:hover .lang-other {
+		color: var(--accent-hover);
 	}
 
 	.social-links a {
@@ -175,7 +239,7 @@ const activeIdx = getActiveIndex(pathname, links);
 			padding: 0 var(--space-md);
 		}
 
-		.social-links {
+		.social-links .social-github {
 			display: none;
 		}
 

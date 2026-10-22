@@ -1,17 +1,21 @@
 ---
 interface Props {
 	date: Date;
+	lang?: 'es' | 'en';
 }
 
-const { date } = Astro.props;
+const { date, lang = 'es' } = Astro.props;
 ---
 
 <time datetime={date.toISOString()}>
 	{
-		date.toLocaleDateString('en-us', {
+		date.toLocaleDateString(lang === 'es' ? 'es-CL' : 'en-US', {
 			year: 'numeric',
 			month: 'short',
 			day: 'numeric',
+			// Content dates are calendar dates, not instants: format in UTC so a
+			// negative local offset never shifts them to the previous day.
+			timeZone: 'UTC',
 		})
 	}
 </time>

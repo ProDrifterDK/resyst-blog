@@ -18,4 +18,20 @@ const blog = defineCollection({
 		}),
 });
 
-export const collections = { blog };
+// English mirror of the blog. `translationOf` points at the Spanish post id so
+// the language switcher and cross-links stay exact even when slugs differ.
+const blogEn = defineCollection({
+	loader: glob({ base: './src/content/blog-en', pattern: '**/*.{md,mdx}' }),
+	schema: ({ image }) =>
+		z.object({
+			title: z.string(),
+			description: z.string(),
+			pubDate: z.coerce.date(),
+			updatedDate: z.coerce.date().optional(),
+			heroImage: z.optional(image()),
+			tags: z.array(z.string()).default([]),
+			translationOf: z.string().optional(),
+		}),
+});
+
+export const collections = { blog, blogEn };

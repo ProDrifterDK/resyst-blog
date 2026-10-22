@@ -1,0 +1,15 @@
+---
+import { getCollection } from 'astro:content';
+import TagPage from '../../../../components/pages/TagPage.astro';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blogEn');
+	const tags = new Set<string>();
+	posts.forEach((post) => (post.data.tags || []).forEach((tag: string) => tags.add(tag)));
+	return [...tags].map((tag) => ({ params: { tag }, props: { tag } }));
+}
+
+const { tag } = Astro.props;
+---
+
+<TagPage tag={tag} lang="en" />

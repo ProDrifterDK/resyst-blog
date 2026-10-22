@@ -6,15 +6,28 @@ export async function getStaticPaths() {
 	const posts = await getCollection('blog');
 	return posts.map((post) => ({
 		params: { slug: post.id },
-		props: post,
+		props: { post },
 	}));
 }
-type Props = CollectionEntry<'blog'>;
 
-const post = Astro.props;
+interface Props {
+	post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
 const { Content } = await render(post);
+
+// Cross-locale companion, resolved from the English collection at build time.
+const enPosts = await getCollection('blogEn');
+const enSlug = new Map(enPosts.map((entry) => [entry.data.translationOf, entry.id]));
+const altEn = enSlug.get(post.id);
+
+const alternates = {
+	es: `/blog/${post.id}/`,
+	...(altEn ? { en: `/en/blog/${altEn}/` } : {}),
+};
 ---
 
-<BlogPost {...post.data}>
+<BlogPost {...post.data} lang="es" alternates={alternates}>
 	<Content />
 </BlogPost>

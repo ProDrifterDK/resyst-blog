@@ -244,6 +244,13 @@
     "translated_at": "2026-10-22T19:04:07-03:00",
     "warnings": []
   },
+  "2026-10-23-el-sello-amarillo": {
+    "en": "the-yellow-seal",
+    "model": "sonnet",
+    "source_sha256": "195d7088d833e728888a98637b1db8b0cbe2669afafffe971a95e0b588219422",
+    "translated_at": "2026-10-23T06:03:25-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

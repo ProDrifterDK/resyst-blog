@@ -251,6 +251,13 @@
     "translated_at": "2026-10-23T06:03:25-03:00",
     "warnings": []
   },
+  "2026-10-24-componer-la-urgencia": {
+    "en": "composing-urgency",
+    "model": "sonnet",
+    "source_sha256": "ffa163878c75ec2ee375333dcd04c7e8ebd6d41e7c5ba4840372cfd4546cdb0d",
+    "translated_at": "2026-10-24T06:03:07-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

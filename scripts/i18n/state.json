@@ -258,6 +258,13 @@
     "translated_at": "2026-10-24T06:03:07-03:00",
     "warnings": []
   },
+  "2026-10-25-el-costo-de-pedir-ayuda": {
+    "en": "the-cost-of-asking-for-help",
+    "model": "sonnet",
+    "source_sha256": "b2331ac6ba1a3f31d85538f09da92fb2a7f4bcf0548a106c2b30a894927d7a9c",
+    "translated_at": "2026-10-25T06:03:11-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

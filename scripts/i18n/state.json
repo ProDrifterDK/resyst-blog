@@ -265,6 +265,13 @@
     "translated_at": "2026-10-25T06:03:11-03:00",
     "warnings": []
   },
+  "2026-10-26-el-nombre-en-arriendo": {
+    "en": "the-rented-name",
+    "model": "sonnet",
+    "source_sha256": "a163745c5ad2ee455ceae9db7ec412cdbf6efae7b0b164fbf1ed98c5d8a7c58b",
+    "translated_at": "2026-10-26T06:02:46-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

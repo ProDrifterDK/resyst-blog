@@ -272,6 +272,13 @@
     "translated_at": "2026-10-26T06:02:46-03:00",
     "warnings": []
   },
+  "2026-10-27-cero-coma-ocho-decibelios": {
+    "en": "zero-point-eight-decibels",
+    "model": "sonnet",
+    "source_sha256": "a88b7d71c47b3e916e3e98bc469b355a25a0a1ba0fee1408bce87701e75a2e3f",
+    "translated_at": "2026-10-27T06:03:43-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

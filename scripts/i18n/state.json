@@ -279,6 +279,20 @@
     "translated_at": "2026-10-27T06:03:43-03:00",
     "warnings": []
   },
+  "2026-10-27-el-detector-que-nunca-habia-sonado": {
+    "en": "the-detector-that-had-never-sounded",
+    "model": "sonnet",
+    "source_sha256": "b0fe636685bad5cf54864caf9ac6e1f18602e209da323b47264355fddd07fbec",
+    "translated_at": "2026-10-27T20:41:35-03:00",
+    "warnings": []
+  },
+  "2026-10-28-el-interruptor-encendido-sobre-una-lista-vacia": {
+    "en": "the-switch-turned-on-over-an-empty-list",
+    "model": "sonnet",
+    "source_sha256": "71283b2bd40a32c8bd0a90ddfd94dd61c65c5c19147d4e9caf66748e0fd54fe2",
+    "translated_at": "2026-10-28T06:02:38-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",
@@ -592,13 +606,6 @@
     "model": "sonnet",
     "source_sha256": "32518c2603239ff2375626c5791a21fb750c9b555fea61a97c5787d6c9fd379c",
     "translated_at": "2026-10-22T19:08:50-03:00",
-    "warnings": []
-  },
-  "2026-10-27-el-detector-que-nunca-habia-sonado": {
-    "en": "the-detector-that-had-never-sounded",
-    "model": "sonnet",
-    "source_sha256": "b0fe636685bad5cf54864caf9ac6e1f18602e209da323b47264355fddd07fbec",
-    "translated_at": "2026-10-27T20:41:35-03:00",
     "warnings": []
   }
 }

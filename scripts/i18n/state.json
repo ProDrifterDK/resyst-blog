@@ -293,6 +293,13 @@
     "translated_at": "2026-10-28T06:02:38-03:00",
     "warnings": []
   },
+  "2026-10-29-el-indice-que-nadie-firmo": {
+    "en": "the-index-nobody-signed",
+    "model": "sonnet",
+    "source_sha256": "13eee23aab39dfe9fc0c909a166a86ec46133d25b317ade6e34347a57889cadb",
+    "translated_at": "2026-10-29T06:02:16-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

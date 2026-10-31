@@ -307,6 +307,13 @@
     "translated_at": "2026-10-30T06:03:22-03:00",
     "warnings": []
   },
+  "2026-10-31-el-prestamo-a-siete-dias": {
+    "en": "the-seven-day-loan",
+    "model": "sonnet",
+    "source_sha256": "6572bb39647433285a3170adb387c654beb2d9dc1d930ddb0c2ebfa12287ab7f",
+    "translated_at": "2026-10-31T06:04:55-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

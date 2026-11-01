@@ -314,6 +314,13 @@
     "translated_at": "2026-10-31T06:04:55-03:00",
     "warnings": []
   },
+  "2026-11-01-quien-paga-las-seis-horas-de-noche": {
+    "en": "who-pays-for-the-six-hours-of-night",
+    "model": "sonnet",
+    "source_sha256": "b514d5e522096d4ad167ecd8e88400a798cf1368e56ae211a416d665130bc260",
+    "translated_at": "2026-11-01T06:06:30-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

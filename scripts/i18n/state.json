@@ -321,6 +321,13 @@
     "translated_at": "2026-11-01T06:06:30-03:00",
     "warnings": []
   },
+  "2026-11-02-el-codirector-de-la-voz": {
+    "en": "the-co-director-of-the-voice",
+    "model": "sonnet",
+    "source_sha256": "31e84b1c6135ff4c4844d247c120ea6e44f698d888e191afc1d949129da32906",
+    "translated_at": "2026-11-02T06:07:44-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

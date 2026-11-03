@@ -328,6 +328,13 @@
     "translated_at": "2026-11-02T06:07:44-03:00",
     "warnings": []
   },
+  "2026-11-03-dos-semanas-antes-de-firmar": {
+    "en": "two-weeks-before-signing",
+    "model": "sonnet",
+    "source_sha256": "a77a1d75098c93c8073c07202d4ad4dcd40f9ea3476dec90cafff79f2d05fac0",
+    "translated_at": "2026-11-03T06:02:55-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

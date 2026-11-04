@@ -335,6 +335,13 @@
     "translated_at": "2026-11-03T06:02:55-03:00",
     "warnings": []
   },
+  "2026-11-04-shibboleth-el-examen-de-pronunciacion": {
+    "en": "shibboleth-the-pronunciation-exam-that-never-measured-an-idea",
+    "model": "sonnet",
+    "source_sha256": "ce0e8d7d7f3e822d6df16886a205da44e7cdb21a1cb1de1af5a12bdce442d410",
+    "translated_at": "2026-11-04T06:03:02-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

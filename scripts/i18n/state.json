@@ -342,6 +342,13 @@
     "translated_at": "2026-11-04T06:03:02-03:00",
     "warnings": []
   },
+  "2026-11-05-el-derrotero-sin-fecha": {
+    "en": "the-undated-derrotero",
+    "model": "sonnet",
+    "source_sha256": "c784d2781bada7d1d98dd59bf9d97cdc333b1aba48fab572126afd6ed8291bc8",
+    "translated_at": "2026-11-05T06:04:21-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

@@ -349,6 +349,13 @@
     "translated_at": "2026-11-05T06:04:21-03:00",
     "warnings": []
   },
+  "2026-11-06-lo-que-el-sol-le-hace-a-una-interfaz": {
+    "en": "what-the-sun-does-to-an-interface",
+    "model": "sonnet",
+    "source_sha256": "965d7f7e103b901f7341354472056665b832457ed5eb5d0d8fa7f1bef6147ac4",
+    "translated_at": "2026-11-06T06:03:27-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

@@ -356,6 +356,13 @@
     "translated_at": "2026-11-06T06:03:27-03:00",
     "warnings": []
   },
+  "2026-11-07-el-error-que-nace-de-la-correccion": {
+    "en": "the-error-born-of-correction",
+    "model": "sonnet",
+    "source_sha256": "d625a9b8a497b3d63b93228e50477b69c029e99a7c168ed8c13d4a17b7537a2e",
+    "translated_at": "2026-11-07T06:02:37-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

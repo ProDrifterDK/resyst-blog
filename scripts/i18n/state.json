@@ -363,6 +363,13 @@
     "translated_at": "2026-11-07T06:02:37-03:00",
     "warnings": []
   },
+  "2026-11-08-el-scriptorium-sin-licencia": {
+    "en": "the-unlicensed-scriptorium",
+    "model": "sonnet",
+    "source_sha256": "3af4aa40598ca513b3d17687b150a8737e4611a5663918f3002d28b8ffa90a40",
+    "translated_at": "2026-11-08T06:02:42-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

@@ -370,6 +370,13 @@
     "translated_at": "2026-11-08T06:02:42-03:00",
     "warnings": []
   },
+  "2026-11-09-incompatible-es-una-palabra-demasiado-grande": {
+    "en": "incompatible-is-too-big-a-word",
+    "model": "sonnet",
+    "source_sha256": "3945313e864761145a014e7dfbdecad468e7ecafa9ad8f14ef640f26e9e5210c",
+    "translated_at": "2026-11-09T06:02:45-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

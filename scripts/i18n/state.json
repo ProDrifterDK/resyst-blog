@@ -377,6 +377,13 @@
     "translated_at": "2026-11-09T06:02:45-03:00",
     "warnings": []
   },
+  "2026-11-10-el-titulo-es-la-obra": {
+    "en": "the-title-is-the-work",
+    "model": "sonnet",
+    "source_sha256": "dbb0fb3fa3a840abeb6b04723f03f09bb79e99627e963cc4bcddc5a77797f0cb",
+    "translated_at": "2026-11-10T06:03:37-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

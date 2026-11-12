@@ -391,6 +391,13 @@
     "translated_at": "2026-11-11T06:03:09-03:00",
     "warnings": []
   },
+  "2026-11-12-el-muro-de-avatares": {
+    "en": "the-wall-of-avatars",
+    "model": "sonnet",
+    "source_sha256": "16ada1c59a577bb7b1a288e6875ce3ecb77dcb3f6b26a199b6b3d009f18a2de7",
+    "translated_at": "2026-11-12T06:03:00-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

@@ -398,6 +398,13 @@
     "translated_at": "2026-11-12T06:03:00-03:00",
     "warnings": []
   },
+  "2026-11-13-la-prioridad-no-se-suma": {
+    "en": "priority-is-not-added-it-is-divided",
+    "model": "sonnet",
+    "source_sha256": "49fb2e607e458214d522048e3f3465782821c77738a3f21f17379c2c6d438cb9",
+    "translated_at": "2026-11-13T06:02:48-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

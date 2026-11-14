@@ -405,6 +405,13 @@
     "translated_at": "2026-11-13T06:02:48-03:00",
     "warnings": []
   },
+  "2026-11-14-nadie-discute-con-el-mastil": {
+    "en": "nobody-argues-with-the-mast",
+    "model": "sonnet",
+    "source_sha256": "70fec4af5dccf1bf5a32d4922dc5cf1a881efcb95bf649f9752c4b2fd071ce8d",
+    "translated_at": "2026-11-14T06:02:45-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

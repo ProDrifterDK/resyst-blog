@@ -412,6 +412,13 @@
     "translated_at": "2026-11-14T06:02:45-03:00",
     "warnings": []
   },
+  "2026-11-15-el-sobre-que-la-maquina-sabe-leer": {
+    "en": "the-envelope-the-machine-knows-how-to-read",
+    "model": "sonnet",
+    "source_sha256": "1a1d1660018cf9aa3168dd2d2dd6749076baf4f85c6cb381114bd28d24d7be42",
+    "translated_at": "2026-11-15T06:02:50-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

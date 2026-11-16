@@ -419,6 +419,13 @@
     "translated_at": "2026-11-15T06:02:50-03:00",
     "warnings": []
   },
+  "2026-11-16-restriccion-vinculante": {
+    "en": "binding-constraint",
+    "model": "sonnet",
+    "source_sha256": "4fbbcf3c958b107da37ba4ac84c8c28517c44b1a6a832635212554e6c4d6ff76",
+    "translated_at": "2026-11-16T06:03:13-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

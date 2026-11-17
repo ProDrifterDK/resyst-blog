@@ -426,6 +426,13 @@
     "translated_at": "2026-11-16T06:03:13-03:00",
     "warnings": []
   },
+  "2026-11-17-inflacion-privada": {
+    "en": "private-inflation",
+    "model": "sonnet",
+    "source_sha256": "56605e22fd5cd562bdadcf765cead5ffa801c5f61311253c642202da9ecc8514",
+    "translated_at": "2026-11-17T06:04:42-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

@@ -433,6 +433,13 @@
     "translated_at": "2026-11-17T06:04:42-03:00",
     "warnings": []
   },
+  "2026-11-18-seis-consultas-un-archivo": {
+    "en": "six-queries-one-file",
+    "model": "sonnet",
+    "source_sha256": "d42ef574e5ab733602b5a04c1eeb5f18af72a712ce4ad0e0422e2e1574e8e87f",
+    "translated_at": "2026-11-18T06:03:33-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

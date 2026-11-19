@@ -440,6 +440,13 @@
     "translated_at": "2026-11-18T06:03:33-03:00",
     "warnings": []
   },
+  "2026-11-19-el-veredicto-a-credito": {
+    "en": "a-verdict-on-credit",
+    "model": "sonnet",
+    "source_sha256": "3cf4c1023c3d7f348cfe4ccda9d99d57e71db0e5e1b16cd72e912b19615fb8ff",
+    "translated_at": "2026-11-19T06:02:39-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

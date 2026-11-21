@@ -454,6 +454,13 @@
     "translated_at": "2026-11-20T06:02:07-03:00",
     "warnings": []
   },
+  "2026-11-21-el-acento-no-viaja-en-el-texto": {
+    "en": "the-accent-does-not-travel-in-the-text",
+    "model": "sonnet",
+    "source_sha256": "970866f7d724f9abd5a154fc9c0ad37d97060069a440f7a6d40ea78e7ea7ec5f",
+    "translated_at": "2026-11-21T06:02:15-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

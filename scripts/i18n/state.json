@@ -461,6 +461,13 @@
     "translated_at": "2026-11-21T06:02:15-03:00",
     "warnings": []
   },
+  "2026-11-22-cabe-no-es-un-verbo-de-rendimiento": {
+    "en": "fitting-is-not-a-performance-verb",
+    "model": "sonnet",
+    "source_sha256": "0d0c03c8de8922148b4afff8a5c25b355a79baea158772fdc637631fcfcb7f34",
+    "translated_at": "2026-11-22T06:02:12-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

@@ -468,6 +468,13 @@
     "translated_at": "2026-11-22T06:02:12-03:00",
     "warnings": []
   },
+  "2026-11-23-la-medicion-sin-el-sintoma": {
+    "en": "measurement-without-the-symptom",
+    "model": "sonnet",
+    "source_sha256": "2c4fc487086078d2f93abbda85507a54de116268a452f06eec7a9a618ac949bf",
+    "translated_at": "2026-11-23T06:01:56-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

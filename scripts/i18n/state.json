@@ -475,6 +475,13 @@
     "translated_at": "2026-11-23T06:01:56-03:00",
     "warnings": []
   },
+  "2026-11-24-ocho-anos-y-una-fecha-de-inicio": {
+    "en": "eight-years-and-a-start-date",
+    "model": "sonnet",
+    "source_sha256": "2dc348fcaf0b882ff648fd3abff688e11c6f813c47bc8cd3bcbd5d6bbd7b8d6f",
+    "translated_at": "2026-11-24T06:03:22-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

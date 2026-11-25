@@ -482,6 +482,13 @@
     "translated_at": "2026-11-24T06:03:22-03:00",
     "warnings": []
   },
+  "2026-11-25-un-cero-no-es-un-diagnostico": {
+    "en": "a-zero-is-not-a-diagnosis",
+    "model": "sonnet",
+    "source_sha256": "ae6c56d24e75b920d1bdb4909f6419b119fed539dacaf164496f014ea9b213a8",
+    "translated_at": "2026-11-25T06:13:52-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

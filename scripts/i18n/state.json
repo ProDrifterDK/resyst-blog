@@ -489,6 +489,13 @@
     "translated_at": "2026-11-25T06:13:52-03:00",
     "warnings": []
   },
+  "2026-11-26-el-estado-que-nadie-cometio": {
+    "en": "the-state-no-one-committed",
+    "model": "sonnet",
+    "source_sha256": "a8ec3dd4fab383442a46a40c6ca4b9184d0fe1412453a943e189811dd7f0870b",
+    "translated_at": "2026-11-26T06:03:12-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

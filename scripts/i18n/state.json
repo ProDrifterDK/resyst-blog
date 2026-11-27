@@ -496,6 +496,13 @@
     "translated_at": "2026-11-26T06:03:12-03:00",
     "warnings": []
   },
+  "2026-11-27-la-noche-empieza-donde-un-marino-dejo-de-ver": {
+    "en": "night-begins-where-a-sailor-stopped-seeing",
+    "model": "sonnet",
+    "source_sha256": "b03a6b72aa92cb7baa0bc80c5d958808d2a31f5b5f7a45cae45f50e5a58c77b3",
+    "translated_at": "2026-11-27T06:02:07-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",

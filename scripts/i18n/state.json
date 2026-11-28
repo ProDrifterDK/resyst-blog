@@ -503,6 +503,13 @@
     "translated_at": "2026-11-27T06:02:07-03:00",
     "warnings": []
   },
+  "2026-11-28-el-silencio-firmado": {
+    "en": "the-signed-silence",
+    "model": "sonnet",
+    "source_sha256": "b73a0e3219f1cc80e51188b311ad11d9ea2c63be44e86f301ee18ff2f67f7d5e",
+    "translated_at": "2026-11-28T06:03:09-03:00",
+    "warnings": []
+  },
   "cuando-el-hardware-dejo-de-ser-invisible": {
     "en": "when-hardware-stopped-being-invisible",
     "model": "sonnet",
